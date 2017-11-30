@@ -437,7 +437,7 @@ dir C:\PS_Update\*.psm1 | Unblock-File
 dir C:\PS_Update\*ps1xml | Unblock-File
 set-executionpolicy unrestricted -Force
 ipmo "C:\PS_Update\PSWindowsUpdate"
-Get-WUInstall -MicrosoftUpdate -acceptall -IgnoreReboot
+Get-WUInstall -acceptall -IgnoreReboot
 #Set-ExecutionPolicy remoteSigned
 
 Do {
